@@ -1,7 +1,12 @@
-var number1 = 9;
-var number2 = 10;
-var add = function (n1, n2) {
-    return n1 + n2;
-};
-var answer = add(number1, number2);
-console.log(answer);
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Marcus';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
+// * Type never, just means this function will never return anything for a reason.
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+}
+generateError('An error ocurred!', 500);

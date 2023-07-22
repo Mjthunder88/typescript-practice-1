@@ -1,12 +1,16 @@
-const number1 = 9
-const number2 = 10
+let userInput: unknown;
+let userName: string;
 
+userInput = 5
+userInput = 'Marcus'
 
-const add = (n1: number, n2: number) => {
-    return n1 + n2
+if (typeof userInput === 'string') {
+    userName = userInput
 }
 
+// * Type never, just means this function will never return anything for a reason.
+function generateError (message: string, code: number): never { 
+throw {message: message, errorCode: code}
+}
 
-let answer = add(number1, number2)
-
-console.log(answer)
+generateError('An error ocurred!', 500)
