@@ -18,7 +18,7 @@ printResult(add(5, 2));
 let combinedValues: (a: number, b: number) => number; // ? This is saying that combinedValues needs a function type that has 2 arguments that is a number and that returns a number.
 // let combinedValues: Function; // * Type Function, you can store functions in values
 
-combinedValues = add;
+// combinedValues = add;
 console.log(combinedValues(8, 8))
 
 
